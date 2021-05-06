@@ -87,6 +87,14 @@ a {
 .menu_inline a:hover {
     color: white;
 }
+.color_green {
+    margin: 0 auto;
+    visibility: hidden;
+}
+.menu_inline a:hover .color_green {
+    visibility: visible;
+}
+
 
 #left_col {
     position: relative;
@@ -234,7 +242,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     width: 130px;
-    height: 130px;
+    /* height: 130px; */
     margin: 10px;
 }
 
@@ -509,9 +517,10 @@ footer {
         padding-left: 10px;
     }
     #vertical_menu a:first-child {
-        border: none;
-        padding-left: 10px;
         margin-top: 5px;
+    }
+    #vertical_menu a:hover {
+        padding-left: 10px;
     }
     #vertical_menu span {
         display: none;
@@ -542,6 +551,7 @@ footer {
     .title {
         margin-right: 2px;
     }
+    
 }
 
 /* MD */
@@ -551,6 +561,12 @@ footer {
     }
     .album h4 {
         width: 130px;
+    }
+    .collage {
+        width: 110px;   
+    }
+    .collage img {
+        width: 50%;
     }
     .layover {
         width: 110px;
